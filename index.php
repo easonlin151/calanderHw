@@ -51,16 +51,7 @@
             $month = $switchYear['month'];
             $monthFont = date("M",strtotime($switchYear['monthFont']));
             $yearFont = $year;
-            // echo $month;
-            //  echo "<pre>";
-            //  print_r($calendar);
-            //  echo "</pre>";
-            //  echo date("Ymd",$calendar['today']);
 
-
-            // echo $calendar['$firstdate'];
-            // echo "$monthFont".'<br>';
-            // echo $year;
 
         ?>
 
@@ -142,10 +133,6 @@
                         <?php echo $poetry?>
                     </div>
                 </div>
-
-            </div>
-            <div class="top">
-                <div id="current"></div>
             </div>
         </div>
 
