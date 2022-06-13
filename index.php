@@ -17,21 +17,20 @@
         date_default_timezone_set('Asia/Taipei');
         //new一個calendar類
         $util = new Calendar();
-        //年份數組和月份數組
-
-        for ($i = $_GET['array_years'] - 100; $i < $_GET['array_years'] + 100; $i++) {
-            $years[] = $i;
-        }
 
 
-
-        $months = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
         //獲取選擇的年份
         //如果沒有提交POST請求，則返回當年年份,否則，返回選擇的年份
         if (empty($_GET['array_years'])) {
             $year = date("Y");
+            for ($i = $year - 200; $i < $year + 200; $i++) {
+                $years[] = $i;
+            }
         } else {
             $year = $_GET["array_years"];
+            for ($i = $_GET['array_years'] - 200; $i < $_GET['array_years'] + 200; $i++) {
+                $years[] = $i;
+            }
         }
         //如果沒有提交POST請求，則返回當前月份,否則，返回選擇的月份
         if (empty($_GET['array_months'])) {
@@ -39,6 +38,11 @@
         } else {
             $month = $_GET["array_months"];
         }
+
+
+        //年份數組和月份數組
+
+        $months = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 
         $calendar = $util->threshold($year, $month); //獲取各個邊界值
         $caculate = $util->caculate($calendar); //計算日曆的天數與樣式
