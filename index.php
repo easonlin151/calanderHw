@@ -67,7 +67,7 @@
 
             <div class=section>
                 <div class="pic">
-                    <img src="https://unsplash.it/333/480" alt="">
+                    <img src="https://picsum.photos/333/480" alt="">
                 </div>
                 <div class="box">
 
