@@ -67,7 +67,7 @@
 
             <div class=section>
                 <div class="pic">
-                    <img src="https://picsum.photos/333/480" alt="">
+                    <img src="https://unsplash.it/333/480" alt="">
                 </div>
                 <div class="box">
 
@@ -83,7 +83,8 @@
                                     </span>
 
                                     <span class="dycalendar-span-month-year">
-                                        <?php echo "$monthFont" . " " . "$year"; ?></span>
+                                        <?php echo "$monthFont" . " " . "$year"; ?>
+                                    </span>
                                     <span class="dycalendar-prev-next-btn next-btn">
                                         <a
                                             href="index.php?array_years=<?= $nextYear; ?>&array_months=<?= $nextMonth; ?>">

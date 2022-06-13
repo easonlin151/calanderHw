@@ -9,7 +9,7 @@
 body {
     min-width: 100vw;
     min-height: 100vh;
-    background: url(https://img.1ppt.com/uploads/allimg/1707/1_170720172028_1.JPG);
+    background: url(./bgImg.JPG);
     background-size: cover;
 }
 
@@ -426,6 +426,7 @@ img {
     /*  */
     margin: 10px;
     cursor: pointer;
+
 }
 
 
